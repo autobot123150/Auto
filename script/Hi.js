@@ -52,7 +52,7 @@ module.exports.handleEvent = async ({ event, api, Users }) => {
   if (KEY.includes(event.body) !== false) {
     let data = ["422812141688367", "1775288509378520", "476426593020937", "476420733021523", "147663618749235", "466041158097347", "1528732074026137", "147663618749235", "476426753020921", "529233794205649", "1330360453820546"];
     let sticker = data[Math.floor(Math.random() * data.length)];
-let juswa = ["have you eaten?", "what are you doing?", "how are you baby?", "I'm a chat bot nice to meet you", "I'm updating my commands, what are you doing?", "Can you interact with me using sim command?","You're so beautiful/handsome binibini/ginoo", "I love you mwa */kiss your forehead.","are you bored? talk to my admin", "how are you my dear", "eat some sweets", "are you ok?", "be safe"];
+let juswa = ["have you eaten baby?", "unsa imong gi buhat baby?", "how are you baby?", "I'm a chat bot nice to meet you", "I'm updating my commands, what are you doing?", "Can you interact with me using sim command?","You're so beautiful/handsome binibini/ginoo", "I love you mwa */kiss your forehead.","are you bored? talk to my admin warren", "how are you my dear", "eat some sweets", "are you ok?", "be safe"];
  let juswa1 = juswa[Math.floor(Math.random() * juswa.length)];
     let moment = require("moment-timezone");
     let hours = moment.tz('Asia/Dhaka').format('HHmm');
