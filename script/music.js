@@ -20,7 +20,7 @@ module.exports.run = async function({
   const yts = require("yt-search");
   const musicName = args.join(' ');
   if (!musicName) {
-    api.sendMessage(`To get started, type music and the title of the song you want.`, event.threadID, event.messageID);
+    api.sendMessage(`type ka ng music wag puro example.`, event.threadID, event.messageID);
     return;
   }
   try {
@@ -43,7 +43,7 @@ module.exports.run = async function({
       stream.on('end', () => {
         if (fs.statSync(filePath).size > 26214400) {
           fs.unlinkSync(filePath);
-          return api.sendMessage('The file could not be sent because it is larger than 25MB.', event.threadID);
+          return api.sendMessage('hindi ko ma hanap baby error daw.', event.threadID);
         }
         const message = {
           body: `${music.title}`,
